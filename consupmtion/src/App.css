@@ -1,3 +1,15 @@
+:root{
+  --color-aloe-vera:#678779;
+  --color-green-grass:#083a12;
+  --color-green-blue:#4d978b;
+  --color-green-cute:#68a87e;
+  --color-green-beige:#d4e6be;
+  --color-dark-green:#38513e;
+  --color-green-grass2:#567a3f;
+
+  --text-basic-font:
+}
+
 .App {
   text-align: center;
 }
