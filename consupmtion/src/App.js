@@ -10,6 +10,7 @@ import 'aos/dist/aos.css';
 import Service from './Componenets/Service/Service';
 import Contact from './Componenets/Contact/Contact';
 
+
 function App() {
   useEffect(() => {
     AOS.init({ duration: 2000, once: true });
@@ -24,6 +25,7 @@ function App() {
       <Service/>
       <Contact/>
       <Footer/>
+
     </div>
   );
 }
