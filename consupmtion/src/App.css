@@ -1,11 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+QLD+Beginner&family=Edu+VIC+WA+NT+Beginner:wght@400;500;600&family=Nunito:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Edu+QLD+Beginner&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200&display=swap');
+
+:root{
+  --color-white:rgb(255, 255, 255);
+  --color-aloe-vera:#678779;
+  --color-green-grass:#083a12;
+  --color-green-blue:#4d978b;
+  --color-green-cute:#68a87e;
+  --color-green-beige:#d4e6be;
+  --color-dark-green:#38513e;
+  --color-green-grass2:#567a3f;
+  --color-vif-green:#9DAA20;
+
+  --background-color:#678779;
+
+  --text-basic-font:'Edu QLD Beginner', cursive;
+  --text-header-font: 'Josefin Sans', sans-serif;
+  --text-font:'Nunito', sans-serif;
+  --text-font-icon:'Edu QLD Beginner', cursive;
+}
+
 .App {
   text-align: center;
+  overflow: hidden;
+  max-width: 100%;
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
+
+/*--------------------   Create a custom scrollbar--------------------*/
+
+body::-webkit-scrollbar {
+  width: .2em;
+  border-radius: 100px;
+}
+
+body::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(138, 173, 103, 0.3);
+}
+
+body::-webkit-scrollbar-thumb {
+background-color:var(--color-vif-green);
+/* outline: 0px solid rgb(255, 255, 255); */
+}
+
+
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
