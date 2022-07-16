@@ -1,0 +1,61 @@
+.chatBox{
+    width:  50%;
+    margin: 40px auto ;
+    border: 1px solid rgba(128, 128, 128, 0.759);
+    background: rgb(92, 232, 157);
+    /* padding: 5px; */
+    position: relative;
+    height: 500px;
+    
+}
+.message{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   height: 3rem;
+   margin: 2px;
+   border-radius: 5px;
+   margin-top:10px ;
+   background: rgba(187, 185, 185, 0.266);
+}
+tr{
+    border: 2px solid yellow;
+}
+.host{
+    width: 50%;
+    text-align: left;
+    padding: 10px;
+    color: rgb(68, 66, 66);
+    border: 2px solid red;
+    }
+.donate{
+    width: 50%;
+    text-align: right;
+    padding: 10px;
+    color: rgb(68, 66, 66);
+}
+#send{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid rgba(128, 128, 128, 0.554);
+    position: absolute;
+    bottom: 0px;
+    right: 1px;
+}
+#send input{
+    position: relative;
+    width: 90%;
+    padding: 3px;
+}
+#send button{
+    position: relative;
+    width: 40px;
+    border: none;
+    height: 34px;
+    background: #05a8c5;
+}
+#send button i{
+    color: white;
+}
