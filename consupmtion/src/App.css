@@ -1,4 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+QLD+Beginner&family=Edu+VIC+WA+NT+Beginner:wght@400;500;600&family=Nunito:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Edu+QLD+Beginner&display=swap');
 :root{
+  --color-white:rgb(255, 255, 255);
   --color-aloe-vera:#678779;
   --color-green-grass:#083a12;
   --color-green-blue:#4d978b;
@@ -6,12 +9,20 @@
   --color-green-beige:#d4e6be;
   --color-dark-green:#38513e;
   --color-green-grass2:#567a3f;
+  --color-vif-green:#9DAA20;
 
-  --text-basic-font:
+  --background-color:#678779;
+
+  --text-basic-font:'Edu QLD Beginner', cursive;
+  --text-header-font: 'Edu VIC WA NT Beginner', cursive;
+  --text-font:'Nunito', sans-serif;
+  --text-font-icon:'Edu QLD Beginner', cursive;
 }
 
 .App {
   text-align: center;
+  overflow: hidden;
+  max-width: 100%;
 }
 
 .App-logo {
