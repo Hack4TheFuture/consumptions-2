@@ -7,7 +7,7 @@ function Home() {
   return (
     <>
        
-        <div className='home'>
+        <div className='home' id="home">
         <Slider/>
       
           <div className='homeContent'>

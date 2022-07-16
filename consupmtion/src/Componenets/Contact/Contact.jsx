@@ -1,11 +1,20 @@
-import { React, useRef, useState } from "react";
+import  React, {useRef, useState,useEffect } from "react";
 import "./Contact.css";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
+
 import emailjs from "emailjs-com";
 
 function Contact() {
+ 
+  React.useEffect(()=>{
+      navigator.geolocation.getCurrentPosition((position)=>{
+console.log(position)
+      })
+  },[])
+        
+  
     const form = useRef();
 
     const sendEmail = (e) => {
@@ -37,10 +46,10 @@ function Contact() {
     const successNotification = () => toast.success("Thanks for your message");
   
     const init = () => {
-      setName = "";
-      setEmail= "";
-      setMessage = "";
-      setPhone= "";
+      document.getElementById('name').value=""
+      document.getElementById('email').value=""
+      document.getElementById('phone').value=""
+      document.getElementById('message').value=""
     };
     const cheCkEmail = (email) => {
       const reg =
@@ -54,7 +63,7 @@ function Contact() {
     const checkInput = (e) => {
       e.preventDefault();
   
-      if (name === "" || email === "" || message === "") {
+      if (name === "" || email === "" || phone === "") {
         errorNotification();
       } else if (!cheCkEmail(email)||!checkPhone(phone)) {
         errorEmail();
@@ -67,8 +76,9 @@ function Contact() {
     };
   
   return (
-    <div className='contact'>
-        
+    <div className='contact' id="contact">
+      <div className='title'>Contact</div>
+      <div className="contact1">
         <div className='contact-part1'>
         <small>Contact us</small>
         <h1>Your small help matter</h1>
@@ -78,7 +88,7 @@ function Contact() {
         <form ref={form} onSubmit={checkInput} className="contact-form">
             <input
               className="name1"
-              placeholder="Name"
+              placeholder="Name*"
               type="text"
               id="name"
               name="name"
@@ -87,7 +97,7 @@ function Contact() {
             ></input>
             <input
               className="email"
-              placeholder="Email"
+              placeholder="Email*"
               type="email"
               id="email"
               name="email"
@@ -96,7 +106,7 @@ function Contact() {
             ></input>
             <input
               className="phone"
-              placeholder="Phone"
+              placeholder="Phone*"
               type="tel"
               id="phone"
               name="phone"
@@ -130,6 +140,8 @@ function Contact() {
             draggable
             pauseOnHover
             />
+    </div>
+
     </div>
   )
 }
