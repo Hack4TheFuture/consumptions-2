@@ -1,0 +1,23 @@
+.contact{
+    background: linear-gradient(rgba(0, 0, 0, 0.526),rgba(0,0,0,.5)),url('../../assets/laugh.jpg');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+
+}
+.contact-part1{
+max-width: 60%;
+margin: 5% auto;
+}
+.contact-part1 small{
+    color:var(--color-vif-green);
+    font-weight: 600;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+}
+.contact-part1 h1{
+    color: white;
+    font-family: var(--text-header-font);
+
+}

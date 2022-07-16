@@ -1,0 +1,138 @@
+
+
+.home{
+   /* background-color: white;
+    box-shadow: 1px 7px 20px 1px rgba(0, 0, 0, 0.368); */
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+     width: 100%;
+    height:100vh;
+    padding: 5% auto;
+    border-radius:5px;
+    display:flex;
+    flex-direction: column;
+
+  
+}
+.TextHeader{
+    color:var(--color-white);
+    font-size:3em;
+    font-family: var(--text-basic-font);
+    font-weight: 600;
+    position: relative;
+    top:4%;
+    left:5%;
+
+}
+.homeContent{
+display: grid;
+position: absolute;
+top:58%;
+left: 3%;
+overflow: hidden;
+margin:4%;
+text-align: left;
+
+}
+
+.textContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    position: relative;
+    margin-left: 4%;
+    
+
+
+}
+
+.contentContainer{
+  font-size: 16px;
+  line-height: 1.7em;
+
+
+}
+
+.quote{
+    background-color: black;
+color: white;
+    font-size: 20px;
+    padding: 18px;
+    border-bottom-left-radius: 35px;
+    border-top-right-radius: 35px;
+
+    display: flex;
+    flex-direction: column;
+    line-height: 28px;
+}
+.quote q{
+ 
+    font-size: 22px;
+}
+.quote small{
+    
+    font-size: 20px;
+}
+.backSupport{
+    /* position: absolute; */
+    /* top:20%; */
+    width: 40%;
+    right:5%;
+    /* right:5%; */
+}
+.btngroup{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 600px;
+    margin-block: 25px;
+}
+button{
+    z-index: 10;
+
+}
+.btn{
+	width: 200px;
+    padding: 15px;
+    padding-inline: 25px;
+    font-size: 20px;
+    margin: 15px;
+    color: white;
+}
+
+.more{
+	
+	text-align: center;
+	border-radius: 25px;
+	border: 2px solid var(--color-green-grass2);
+	background: transparent;
+
+	cursor: pointer;
+	position: relative;
+	overflow: hidden;
+    text-transform: uppercase;
+    transition: .4s all;
+   
+}
+span{
+	background:var(--color-green-grass2);
+	height: 100%;
+	width: 0;
+	border-radius: 25px;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	z-index: -1;
+	transition: 0.5s;
+}
+.more:hover span{
+
+width: 100%;
+}
+.more:hover{
+    color: white;
+	border: non;
+}

@@ -1,0 +1,159 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+.slider {
+
+    width: 100%;
+    height:100%;
+    position: absolute;
+    overflow: hidden;
+
+  }
+  
+  .slide {
+
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    /* transform: translateX(50%); */
+    transition: all 0.4s ease;
+  }
+
+
+ 
+  
+  .current {
+    
+    opacity: 1;
+    transform: translateX(0);
+    text-align: left;
+    
+  }
+  .head-Text{
+    font-size: 4rem;
+    font-weight: 600;
+  }
+  .content-Text{
+font-size: 25px;
+font-family: inherit;
+font-weight: 200;
+  }
+
+  .slide img {
+     width: 100%;
+    
+    height: 100%;
+  }
+  
+  .content {
+    background-color: rgba(0, 0, 0, 0.838);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left:0;
+    right:0;
+    opacity: 1;
+    max-width: 100%;
+    color: rgb(255, 255, 255);
+    padding: 3rem;
+    /* background: rgba(0, 0, 0, 0.884); */
+    animation: slide-up 5s ease 0.5s;
+    animation-delay: .7s;
+    animation-fill-mode: forwards;
+    /* visibility: visible; */
+    padding: 15% 8%;
+    padding-right: 25%;
+  }
+  
+  @keyframes slide-up {
+    from{
+      
+      opacity:1;
+     
+      
+    }
+    to{
+       
+        opacity:.8;
+     
+    }
+  
+  }
+  
+  @media screen and (max-width: 600px) {
+    .content {
+      width: 80%;
+    }
+  }
+  
+  .content > * {
+    color: white;
+    margin-bottom: 1rem;
+    
+  }
+  
+  .current .content {
+    opacity: 1;
+    transform: translateX(0);
+    transition: all 0.5s ease;
+  }
+
+  .arrow {
+    border: 2px solid rgb(214, 208, 208);
+    background-color: transparent;
+    color: rgb(255, 246, 246);
+    cursor: pointer;
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+    position: absolute;
+    transition: .2s all ease-in-out;
+    z-index: 15;
+  }
+  .arrow:hover{
+    background-color: rgba(28, 25, 25, 0.56);
+    color: var(--color-vif-green);
+    border: 2px solid var(--color-vif-green);
+  } 
+  
+.next {
+    top: 55%;
+    right: 1.5rem;
+  }
+  .prev {
+    top: 55%;
+    left: 1.5rem;
+  }
+  
+  hr {
+    height: 2px;
+    background: rgb(0, 0, 0);
+    width: 50%;
+  }
+
+
+  @media screen and (max-width:1063px){
+    .slider {
+      width: 100%;
+      height: 50vh;
+      position: relative;
+      overflow: hidden;
+    }
+    .content{
+      left:3%;
+      top:28%;
+      width: 60%;
+    }
+
+    .head-Text{
+      font-size: 30px;
+    }
+    .content-Text{
+      font-size: 22px;
+    }
+  }
