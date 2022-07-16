@@ -85,7 +85,7 @@
     
 
 }
-.navList li a:before{
+.navList li a::before{
     content: '';
     background-color: var(--color-vif-green);
     height:3px;
@@ -99,6 +99,9 @@
 .navList li a:hover::before{
     width: 80%;
     left:10px
+}
+a.active{
+    color:var(--color-vif-green)
 }
 .subscribe{
     padding: 15px;
@@ -230,5 +233,15 @@
         display: flex;
         z-index: 15;
     }
-
+.navList li a:before{
+    content: '';
+    background-color: var(--color-vif-green);
+    height:3px;
+    position: absolute;
+    width: 0;
+    left:10px;
+    top: 45px;
+    right: 0;
+    transition: .5s all;
+}
 }

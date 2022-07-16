@@ -1,11 +1,20 @@
-import { React, useRef, useState } from "react";
+import  React, {useRef, useState,useEffect } from "react";
 import "./Contact.css";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
+
 import emailjs from "emailjs-com";
 
 function Contact() {
+ 
+  React.useEffect(()=>{
+      navigator.geolocation.getCurrentPosition((position)=>{
+console.log(position)
+      })
+  },[])
+        
+  
     const form = useRef();
 
     const sendEmail = (e) => {
@@ -67,8 +76,9 @@ function Contact() {
     };
   
   return (
-    <div className='contact'>
-      
+    <div className='contact' id="contact">
+      <div className='title'>Contact</div>
+      <div className="contact1">
         <div className='contact-part1'>
         <small>Contact us</small>
         <h1>Your small help matter</h1>
@@ -130,6 +140,8 @@ function Contact() {
             draggable
             pauseOnHover
             />
+    </div>
+
     </div>
   )
 }

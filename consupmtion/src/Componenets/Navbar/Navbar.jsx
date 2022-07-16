@@ -1,6 +1,8 @@
-import React, { useState, useEffect ,useRef} from "react";
+import React, { useState ,useRef} from "react";
+import { NavLink } from "react-router-dom";
 import { HashLink as Link } from "react-router-hash-link";
 import './Navbar.css'
+
 
 function Navbar() {
     const headerRef=useRef()
@@ -41,30 +43,51 @@ function Navbar() {
             </div>
             <ul className='navList' ref={headerRef}>
                 <li>
-                    <a href="">
+                    <Link  activeClass="active"
+                      to={"#home"}
+                      spy={true}
+                      smooth={true}
+                      offset={-100}
+                      duration={500}>
                      Home
-                 </a>
+                 </Link>
                 </li>
                 <li>
-                    <a href="">About</a>
+                    <Link  to={"#about"}
+                      spy={true}
+                      smooth={true}
+                      offset={-100}
+                      duration={500}>About</Link>
                     
                 </li>
                 <li>
-                    <a href="">
+                    <Link  to={"#service"}
+                      spy={true}
+                      smooth={true}
+                      offset={-100}
+                      duration={500}>
                     Service
-                    </a>
+                    </Link>
                 </li>
               
                 <li>
-                <a href=""> blogs</a>
+                <Link  to={"#blogs"}
+                      spy={true}
+                      smooth={true}
+                      offset={-100}
+                      duration={500}> blogs</Link>
                    
                 </li>
                 <li>
-                <a href=""> Contact</a>
+                <Link  to={"#contact"}
+                      spy={true}
+                      smooth={true}
+                      offset={-100}
+                      duration={500}> Contact</Link>
                    
                 </li>
                 <li>
-                 <button  className="subscribe">Subscibe</button>
+                 <NavLink to="/Login" className="subscribe">Subscibe</NavLink>
                 </li>
             </ul>
             <div

@@ -1,0 +1,149 @@
+*,*::before,*::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#login{
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row-reverse;
+    max-width:800px;
+    box-shadow: 0px 0px 10px 0px black;
+    overflow: hidden;
+    margin: auto;
+
+}
+.formSign{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    padding-inline: 25px;
+    width: 100%;
+    margin-block:25px;
+
+}
+.formSign h3{
+    margin-top: 25px;
+    color: rgba(0, 0, 0, 0.722);
+    font-size: 16px;
+}
+
+.sign-title{
+    color: var(--color-green-grass2);
+    font-size: 28px;
+}
+.formSign .fa-brands{
+    background-color: transparent;
+    border-radius: none;
+    padding: none;
+}
+.btnGroup{
+   display: flex;
+   align-items: center;
+  justify-content: center;
+
+}
+
+.facebook,.google{
+    
+    border-radius: 25px;
+    border: none;
+    margin: 15px;
+  
+
+}
+.facebook{
+    background-color: #385898;
+}
+.facebook:hover,
+.google:hover{
+    transform: scale(1.02);
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.696);
+}
+.google{
+    background-color: rgba(28, 26, 26, 0.527);
+}
+
+.fa-facebook-f,
+.fa-google{
+    font-size: 19px;
+    padding: 10px;
+    width: 35px;
+    height: 35px;
+    color:white;
+}
+#login img{
+    width: 50%;
+}
+.inputsSign{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.inputBox{
+   
+    display: flex;
+    flex-direction: column-reverse;
+   padding: 5px;
+   width: 100%;
+   text-align: left;
+  
+  
+}
+.inputBox label{
+  color:black;
+
+}
+.inputBox input{
+    margin: 0;
+    color: black;
+    background-color: rgba(0, 0, 0, 0);
+  border: 2px solid var(--color-green-grass2);
+    border-radius: 5px;
+
+}
+.inputBox input:focus{
+    box-shadow: 0px 0px 10px 0px rgba(24, 123, 24, 0.571);
+}
+.btnSignGroup{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 15px;
+    justify-content: space-around;
+}
+.sign{
+    color:var(--color-green-grass2);
+    padding-inline: 35px;
+    padding-block: 12px;
+font-size: 15px;
+    box-shadow: none;
+    border-radius: 25px;
+    border: 1px solid var(--color-green-grass2);
+transition: .5s all ;
+
+}
+.sign:hover{
+    background-color: var(--color-green-grass2);
+    color: white;
+
+}
+.sign:focus{
+    outline: 2px solid black;
+    outline-offset: 3px;
+}
+.linked{
+    color:black;
+    font-size: 14px;
+}
+.linked a{
+    color: var(--color-vif-green);
+}
+.linked a:hover{
+    color: black;
+}

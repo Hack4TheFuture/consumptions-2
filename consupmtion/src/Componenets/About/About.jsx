@@ -4,7 +4,7 @@ import support from '../../assets/support.png'
 
 function About() {
   return (
-    <div className='about'>
+    <div className='about' id="about">
       <div className='title'>About us</div>
       <div className='aboutSection'>
         <div className="part1">

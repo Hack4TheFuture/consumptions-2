@@ -1,4 +1,12 @@
 .contact{
+    display: flex;
+    flex-direction: column;
+}
+.contact .title{
+    margin:1% 5%;
+}
+.contact1{
+    margin-top: 4%;
     background: linear-gradient(rgba(0, 0, 0, 0.526),rgba(0,0,0,.5)),url('../../assets/laugh.jpg');
     background-position: center;
     background-size: cover;
@@ -77,8 +85,14 @@ input::placeholder,
     background-color: var(--color-vif-green);
     color: white;
     transition:.5s all ease-in-out;
+    z-index: 0;
 }
 .sendMessage:hover{
    background-color: rgba(255, 255, 255, 0.773);
    color:var(--color-vif-green);
+}
+
+
+.contact2{
+    background-color: black;
 }
