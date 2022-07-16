@@ -9,8 +9,13 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Service from './Componenets/Service/Service';
 import Contact from './Componenets/Contact/Contact';
+<<<<<<< HEAD
 import Login from './Componenets/Authentification/Login';
 import Signup from './Componenets/Authentification/Signup'
+=======
+
+
+>>>>>>> 94b88114d4d14f86ea0a84a9b3b4ad82df1e5062
 function App() {
   useEffect(() => {
     AOS.init({ duration: 2000, once: true });
@@ -31,6 +36,7 @@ function App() {
       <Login/>
       <Contact/>
       <Footer/>
+
     </div>
   );
 }
