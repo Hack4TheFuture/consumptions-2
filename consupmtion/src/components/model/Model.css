@@ -1,0 +1,194 @@
+.add-pin-model{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999999;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.add-pin-container{
+    padding: 35px;
+    width: 880px;
+    height: 674px;
+    border-radius: 16px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    display: flex;
+    background-color: #ffffff;
+}
+.side{
+    padding: 20px;
+    width: 50%;
+    height: 100%;
+}
+/* #left-side{
+    background-color: orange;
+}
+#right-side{
+    background-color: blue;
+} */
+.icons-container{
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-shrink: 0;
+    background-color: #f0f0f0;
+    cursor: pointer;
+}
+#ellipsis-icon{
+    width: 50%;
+}
+#up-arrow-icon{
+    width: 50%;
+}
+.sec-1{
+    width: 100%;
+    height: 8%;
+    /* background-color: purple; */
+}
+.sec-2{
+    padding: 0 10px;
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-color: aqua; */
+}
+.sec-3{
+    width: 100%;
+    height: 12%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: firebrick; */
+}
+#left-side .sec-1 .icons-container{
+    margin-bottom: 5px;
+    transition: 0.3s;
+    background-color: rgba(239, 239, 239, 0);
+}
+#left-side .sec-1 .icons-container:hover{
+    background-color: rgba(239, 239, 239, 1);
+}
+#left-side .sec-2 #upload-img-lable{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+#left-side .sec-2 #upload-img-lable input{
+    width: 0%;
+    height: 0%;
+    opacity: 0;
+}
+#left-side .sec-2 #upload-img-lable .upload-img-container{
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    background-color: #efefef;
+}
+#left-side .sec-2 #upload-img-lable .upload-img-container .border{
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    border: 2px dashed #dadada;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#left-side .sec-2 .icons-container{
+    background-color: #767676;
+}
+#left-side .sec-3 .save-from-site{
+    width: 340px;
+    height: 48px;
+    border-radius: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    background-color: #efefef;
+    cursor: pointer;
+}
+.model-pin{
+    width: 252px;
+    height: 512px;
+    border-radius: 16px;
+    display: none;
+    opacity: 0;
+    position: relative;
+    overflow: hidden;
+}
+.pin-image{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pin-image img{
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+}  
+.pin-max-height{
+    height: 100%;
+}
+.pin-max-width{
+    width: 100%;
+}
+#right-side .sec-1{
+    display: flex;
+    justify-content: flex-end;
+}
+#right-side .sec-1 .select-size{
+    width: 236px;
+    height: 40px;
+    display: flex;
+}
+#right-side .sec-1 .select-size select{
+    width: 70%;
+    height: 100%;
+    border: none;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    outline: none;
+    font-size: 16px;
+    background-color: #efefef;
+}
+#right-side .sec-1 .select-size .save-pin{
+    width: 30%;
+    height: 100%;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    color: white;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e60023; 
+    cursor: pointer;
+}
+#right-side .sec-2 .new-pin-input{
+    margin-bottom: 20px;
+    width: 100%;
+    height: 50px;
+    font-size: 16px;
+    border: none;
+    border-bottom: 2px solid #c6c6c6;
+    outline: none;
+    background-color: transparent;
+}
