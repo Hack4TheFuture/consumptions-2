@@ -1,12 +1,12 @@
 import React from 'react'
 import logoImg from '../../assets/img/logo.png';
 import './Main-profile.css';
-import '../model-pin/model-pin.css';
-import '../model/Model.css';
-import '../pin/Pins.css';
+import './main-profile/model-pin/model-pin.css';
+import './main-profile/model/Model.css';
+import './main-profile/pin/Pins.css';
 
 
-function Prof() {
+function MainProfile() {
     
     const add_pin_model = document.querySelector(".add-pin-model");
 document.querySelector(".add-pin").addEventListener("click", () =>{
@@ -215,4 +215,4 @@ function resetModel(){
   )
 }
 
-export default Prof
+export default MainProfile;
