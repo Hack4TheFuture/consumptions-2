@@ -1,5 +1,12 @@
 import './App.css';
+<<<<<<< HEAD
+<<<<<<< HEAD
 
+import MainProfile from './Componenets/main-profile/MainProfile';
+=======
+=======
+
+>>>>>>> fa207933d4a8f1b9a06d9561c7bcdb3f8db0126a
 import React,{useEffect} from 'react';
 import Navbar from './Componenets/Navbar/Navbar';
 import Home from './Componenets/Home/Home';
@@ -13,6 +20,11 @@ import Contact from './Componenets/Contact/Contact';
 
 import Login from './Componenets/Authentification/Login';
 import Signup from './Componenets/Authentification/Signup'
+<<<<<<< HEAD
+=======
+>>>>>>> afe9c6569616abfb81934a4c80df73ba293cd439
+=======
+>>>>>>> fa207933d4a8f1b9a06d9561c7bcdb3f8db0126a
 
 
 
@@ -22,7 +34,14 @@ function App() {
   }, []);
   return (
     <div className="App">
+<<<<<<< HEAD
+<<<<<<< HEAD
+      Hello guys
+      <MainProfile/>
+=======
+=======
 
+>>>>>>> fa207933d4a8f1b9a06d9561c7bcdb3f8db0126a
  
       <Navbar/> 
       <Routes>
@@ -38,6 +57,10 @@ function App() {
       <Contact/>
       <Footer/>
 
+<<<<<<< HEAD
+>>>>>>> afe9c6569616abfb81934a4c80df73ba293cd439
+=======
+>>>>>>> fa207933d4a8f1b9a06d9561c7bcdb3f8db0126a
     </div>
   );
 }
