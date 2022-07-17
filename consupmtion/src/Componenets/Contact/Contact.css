@@ -1,0 +1,98 @@
+.contact{
+    display: flex;
+    flex-direction: column;
+}
+.contact .title{
+    margin:1% 5%;
+}
+.contact1{
+    margin-top: 4%;
+    background: linear-gradient(rgba(0, 0, 0, 0.526),rgba(0,0,0,.5)),url('../../assets/laugh.jpg');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    height: 60vh;
+
+}
+.contact-part1{
+max-width: 40%;
+margin: 5% auto;
+text-align: left;
+
+}
+.contact-part1 small{
+    color:var(--color-vif-green);
+    font-weight: 600;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+    line-height: 2em;
+}
+.contact-part1 h1{
+    color: white;
+    font-family: var(--text-header-font);
+    padding-block: 15px;
+    font-size: 3em;
+}
+.contact-part1 p{
+    color: white;
+}
+.contact-part2{
+    position: relative;
+    margin: auto;
+    background-color:#9caa2088;
+    padding: 15px;
+    border-radius: 45px;
+}
+.contact-form{
+    margin: 25px;
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+
+}
+input,
+.message,input:focus,
+.message:focus{
+    background-color: rgba(255, 247, 247, 0.614);
+}
+input,
+.message,
+.sendMessage{
+font-size: 18px;
+padding-block: 10px;
+padding-left:5px;
+margin-block: 8px;
+margin-inline:25px;
+outline: none;
+border-radius:18px;
+border: none;
+
+}
+input::placeholder,
+.message::placeholder{
+    padding-left:5px;
+}
+.sendMessage{
+    padding: 10px;
+    font-size: 14px;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    max-width: 40%;
+    background-color: var(--color-vif-green);
+    color: white;
+    transition:.5s all ease-in-out;
+    z-index: 0;
+}
+.sendMessage:hover{
+   background-color: rgba(255, 255, 255, 0.773);
+   color:var(--color-vif-green);
+}
+
+
+.contact2{
+    background-color: black;
+}
