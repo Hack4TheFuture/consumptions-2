@@ -1,5 +1,4 @@
 import React from 'react'
-import logoImg from '../../assets/img/logo.png';
 import './Main-profile.css';
 import './main-profile/model-pin/model-pin.css';
 import './main-profile/model/Model.css';
@@ -139,10 +138,10 @@ function resetModel(){
     <div>
         <div class="nav-bar">
         <div class="heading-container">
-            <div class="logo">
+            {/* <div class="logo">
                 <img src={logoImg} alt=""/>
-            </div>
-            <button class="home-btn">Home</button>
+            </div> */}
+            {/* <button class="home-btn">Home</button> */}
             <div class="search">
                 <input type="text" placeholder="Search" id="search"/>
             </div>

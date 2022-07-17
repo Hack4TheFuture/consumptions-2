@@ -1,7 +1,12 @@
 import './App.css';
 <<<<<<< HEAD
-import Prof from './components/Pro/Prof';
+<<<<<<< HEAD
+
+import MainProfile from './Componenets/main-profile/MainProfile';
 =======
+=======
+
+>>>>>>> fa207933d4a8f1b9a06d9561c7bcdb3f8db0126a
 import React,{useEffect} from 'react';
 import Navbar from './Componenets/Navbar/Navbar';
 import Home from './Componenets/Home/Home';
@@ -12,14 +17,17 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Service from './Componenets/Service/Service';
 import Contact from './Componenets/Contact/Contact';
-<<<<<<< HEAD
+
 import Login from './Componenets/Authentification/Login';
 import Signup from './Componenets/Authentification/Signup'
+<<<<<<< HEAD
 =======
 >>>>>>> afe9c6569616abfb81934a4c80df73ba293cd439
+=======
+>>>>>>> fa207933d4a8f1b9a06d9561c7bcdb3f8db0126a
 
 
->>>>>>> 94b88114d4d14f86ea0a84a9b3b4ad82df1e5062
+
 function App() {
   useEffect(() => {
     AOS.init({ duration: 2000, once: true });
@@ -27,9 +35,13 @@ function App() {
   return (
     <div className="App">
 <<<<<<< HEAD
+<<<<<<< HEAD
       Hello guys
-      <Prof/>
+      <MainProfile/>
 =======
+=======
+
+>>>>>>> fa207933d4a8f1b9a06d9561c7bcdb3f8db0126a
  
       <Navbar/> 
       <Routes>
@@ -45,7 +57,10 @@ function App() {
       <Contact/>
       <Footer/>
 
+<<<<<<< HEAD
 >>>>>>> afe9c6569616abfb81934a4c80df73ba293cd439
+=======
+>>>>>>> fa207933d4a8f1b9a06d9561c7bcdb3f8db0126a
     </div>
   );
 }
