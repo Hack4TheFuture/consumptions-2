@@ -1,7 +1,7 @@
 import React,{useState} from 'react'
 import { HashLink as Link } from "react-router-hash-link";
 import login from '../../assets/login.png'
-import "./Sign.css";
+import "./sign.css";
 
 function Login() {
     const [email, setEmail] = useState("");

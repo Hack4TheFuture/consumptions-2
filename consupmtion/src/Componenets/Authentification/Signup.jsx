@@ -1,5 +1,5 @@
 import React,{useState} from 'react'
-import "./Sign.css";
+import "./sign.css";
 import { HashLink as Link } from "react-router-hash-link";
 import login from '../../assets/login.png'
 

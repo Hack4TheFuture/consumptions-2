@@ -1,9 +1,9 @@
 import React from "react";
 import logoImg from "../../assets/img/logo.png";
 import "./Main-profile.css";
-import "../main-profile/model/Model.css";
-import "../main-profile/pin/Pins.css";
-import "../main-profile/model-pin/model-pin.css";
+import "./model/Model.css";
+import "./pin/Pins.css";
+import "./model-pin/model-pin.css";
 
 
 function MainProfile() {
@@ -22,40 +22,40 @@ function MainProfile() {
     function uploadImg() {
       let pin_img_blob = null;
       let uploadImage = document.querySelector("#upload-img");
-      if (event.target.files && event.target.files[0]) {
-        if (/image\/*/.test(event.target.files[0].type)) {
-          const reader = new FileReader();
-          reader.onload = function () {
-            const newImg = new Image();
-            newImg.src = reader.result;
-            pin_img_blob = reader.result;
+      // if (event.target.files && event.target.files[0]) {
+      //   if (/image\/*/.test(event.target.files[0].type)) {
+      //     const reader = new FileReader();
+      //     reader.onload = function () {
+      //       const newImg = new Image();
+      //       newImg.src = reader.result;
+      //       pin_img_blob = reader.result;
 
-            newImg.onload = function () {
-              const modelPin = document.querySelector(
-                ".add-pin-model .model-pin"
-              );
-              newImg.classList.add(".pin-max-width");
-              document
-                .querySelector(".add-pin-model .pin-image")
-                .appendChild(newImg);
-              document.querySelector("#upload-img-lable").style.display = "none";
-              modelPin.style.display = "block";
-              if (
-                newImg.getBoundingClientRect().width <
-                  newImg.parentElement.getBoundingClientRect().width ||
-                newImg.getBoundingClientRect().height <
-                  newImg.parentElement.getBoundingClientRect().height
-              ) {
-                newImg.classList.remove(".pin-max-width");
-                newImg.classList.add(".pin-max-height");
-              }
-              modelPin.style.opacity = 1;
-            };
-          };
+      //       newImg.onload = function () {
+      //         const modelPin = document.querySelector(
+      //           ".add-pin-model .model-pin"
+      //         );
+      //         newImg.classList.add(".pin-max-width");
+      //         document
+      //           .querySelector(".add-pin-model .pin-image")
+      //           .appendChild(newImg);
+      //         document.querySelector("#upload-img-lable").style.display = "none";
+      //         modelPin.style.display = "block";
+      //         if (
+      //           newImg.getBoundingClientRect().width <
+      //             newImg.parentElement.getBoundingClientRect().width ||
+      //           newImg.getBoundingClientRect().height <
+      //             newImg.parentElement.getBoundingClientRect().height
+      //         ) {
+      //           newImg.classList.remove(".pin-max-width");
+      //           newImg.classList.add(".pin-max-height");
+      //         }
+      //         modelPin.style.opacity = 1;
+      //       };
+      //     };
 
-          reader.readAsDataURL(event.target.files[0]);
-        }
-      }
+      //     reader.readAsDataURL(event.target.files[0]);
+      //   }
+      // }
       uploadImage.value = "";
 
       // uploadImage.value = "";
